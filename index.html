@@ -7,12 +7,24 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <link crossorigin="anonymous"
           href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.css"
-          integrity="sha512-7VGuxKU1BFMmA+dC7NiW8jF0YOIe6bibjUBr42unVtEsI/UYzXMS3nkgNvmsY4yqauxeiEs4bXF6fPLsCuxN/A=="
           referrerpolicy="no-referrer" rel="stylesheet"/>
     <style>
         body html {
             height: 100vh;
+        }
+
+        body {
             font-size: 16px;
+        }
+
+        body {
+            -ms-overflow-style: none; /* for Internet Explorer, Edge */
+            scrollbar-width: none; /* for Firefox */
+            overflow-y: scroll;
+        }
+
+        body::-webkit-scrollbar {
+            display: none; /* for Chrome, Safari, and Opera */
         }
 
         .hero-body {
@@ -25,7 +37,23 @@
         }
 
         #email {
-            width: 33%;
+            width: 100%;
+        }
+
+        @media screen and (min-width: 500px){
+            #email{
+                width: 66%;
+            }
+        }
+
+        @media screen and (min-width: 750px){
+            #email{
+                width: 33%;
+            }
+
+            #hero-description{
+                width: 66%;
+            }
         }
 
         #email-label {
@@ -33,7 +61,6 @@
         }
 
         #hero-description {
-            width: 40%;
             font-size: 1.25em;
         }
     </style>
