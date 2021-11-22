@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link crossorigin="anonymous"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.css"
+          integrity="sha512-7VGuxKU1BFMmA+dC7NiW8jF0YOIe6bibjUBr42unVtEsI/UYzXMS3nkgNvmsY4yqauxeiEs4bXF6fPLsCuxN/A=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <style>
+        body html {
+            height: 100vh;
+            font-size: 16px;
+        }
+
+        .hero-body {
+            background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.75),
+                    rgba(0, 0, 0, 0.75)
+            ),
+            url("sailboat.jpg");
+            background-size: cover;
+        }
+
+        #email {
+            width: 33%;
+        }
+
+        #email-label {
+            display: none;
+        }
+
+        #hero-description {
+            width: 40%;
+            font-size: 1.25em;
+        }
+    </style>
+    <title>Twing Pre-Launch Sign Up Page</title>
+</head>
+<body>
+<section class="hero is-fullheight has-text-white">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="container" id="hero-header">
+                <p class="title has-text-white is-size-1">Every sailor has a
+                    story.
+                    What's yours?</p>
+                <p class="subtitle has-text-white is-size-3 mt-5">Share Your
+                    Ship's Story on Twing</p>
+            </div>
+            <div class="container mt-6" id="hero-description">
+                <p>Create and share your digital captain's log. Then, connect
+                    with others and read about their daily cruising
+                    adventures and see their amazing photos.</p>
+            </div>
+            <form class="m-6">
+                <h3 class="has-text-weight-bold">Sign Up To Get A
+                    Personal Invite When Its Ready</h3>
+                <div class="field my-5">
+                    <label class="label" for="email"
+                           id="email-label">Email</label>
+                    <div class="control is-medium">
+                        <input class="input is-primary is-rounded"
+                               id="email"
+                               name="email"
+                               placeholder="johndoe@gmail.com"
+                               required
+                               type="email"
+                        >
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button is-primary is-rounded">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>
